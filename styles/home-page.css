@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    background: url('https://www.azernews.az/media/2021/11/24/capture_of_iravan.jpg') center/cover no-repeat fixed;
+    width: 100%;
+    height: 400px;
+    transition-duration: 500ms;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+}
+
+.links-wrapper {
+    padding: 30px 0;
+}
+
+.links-wrapper h2 {
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.links::-webkit-scrollbar {
+    display: none;
+}
+
+.links a {
+    background: #0062eb;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 18px;
+    
+    white-space: nowrap;
+}
+
+header .blog-container nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .blog-container nav .logo {
+    font-weight: bold;
+    font-size: 32px;
+    padding: 10px 0;
+    
+}
+
+.blog-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blogs-heading {
+    margin: 50px 0 30px;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.blog-photo {
+    height: 200px;
+}
+
+.blog-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-card {
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.blog-card .outline-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #957468;
+    width: 100%;
+    height: 100%;
+    transform: translate(5px, 5px);
+    z-index: -2;
+    border-radius: 10px;
+}
+
+.blog-card .content {
+    padding: 20px;
+}
+
+.blog-card h2 {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+}
+
+.blog-card .meta {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.blog-card .meta .date,
+.blog-card .meta .likes {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: black;
+}
+
+.blog-card .meta i {
+    font-size: 12px;
+}
+
+.blog-card p {
+    font-size: 0.875em;
+    color: #333;
+}
+
+.blog-card .read-more {
+    display: inline-block;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.blog-card .read-more span {
+    margin-left: 5px;
+    transition: margin-left 0.3s;
+}
+
+.blog-card .read-more:hover span {
+    margin-left: 10px;
+}
+
+.blog-card .image {
+    height: 300px;
+    position: relative;
+}
+
+.blog-card .image img {
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    object-fit: cover;
+}
+
+.blog-card .image a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    padding: 20px 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.blog-card .image a > span {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    color: black;
+}
+
+.blog-wrapper {
+    width: 100%;
+    height: 500px;
+    background: #000;
+    position: relative;
+}
+
+.blog-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-wrapper .blog-main-details {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.blog-wrapper .blog-main-details span {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.blog-wrapper .blog-main-details b {
+    color: white;
+    font-size: 26px;
+    background-color: #000;
+}
+
+footer {
+    border-top: 1px solid #dddddd;
+    margin-top: 50px;
+}
+
+footer .container-footer {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .container-footer .logo {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+footer  p {
+    text-align: center;
+    padding: 10px 0;
+    
+}
+footer > p {
+    border-top: 1px solid #dddddd;
+    
+}
+
+
+@media only screen  and (max-width: 768px) {
+    header .blog-container nav {
+        justify-content: center;
+    }
+
+    .links-wrapper .links {
+        flex-wrap: nowrap;
+        overflow: auto;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+
+@media only screen  and (max-width: 1200px) {
+
+
+    .blog-grid {
+        grid-template-columns: 1fr 1fr ;
+    }
+}

@@ -1,0 +1,114 @@
+
+
+
+#banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+
+.to-home {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.to-home i {
+    font-size: 22px;
+}
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.newest-blog {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.author img {
+    border-radius: 50%;
+}
+
+.author-name {
+    font-weight: bold;
+}
+
+.content {
+    padding: 20px;
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.detail-item {
+    flex: 1 1 150px;
+}
+
+.label {
+    font-weight: bold;
+    display: block;
+}
+
+.value {
+    display: block;
+}
+
+article h2 {
+    margin-top: 0;
+}
+
+article p {
+    text-align: justify;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
